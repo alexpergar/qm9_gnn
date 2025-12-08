@@ -17,7 +17,7 @@ def evaluate(model, loader, device, train_mean, train_std, target_idx,
         train_mean: Mean of the target property in the training set.
         train_std: Standard deviation of the target property in the training set.
         target_idx: Index of the target property in the dataset.
-        model_type: Type of the model ("gcn" or "dimenet").
+        model_type: Type of the model ("gcn", "nnconv" or "dimenet").
     Returns:
         Mean Absolute Error (MAE) over the evaluation dataset.
     """
@@ -52,7 +52,7 @@ def compare_ytrue_ypred(model, loader, device, train_mean, train_std,
         train_mean: Mean of the target property in the training set.
         train_std: Standard deviation of the target property in the training set.
         target_idx: Index of the target property in the dataset.
-        model_type: Type of the model ("gcn" or "dimenet").
+        model_type: Type of the model ("gcn", "nnconv" or "dimenet").
     Returns:
         Two lists: true values and predicted values.
     """

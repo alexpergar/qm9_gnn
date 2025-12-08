@@ -20,7 +20,7 @@ def train_one_epoch(
         train_mean: Mean of the target property in the training set.
         train_std: Standard deviation of the target property in the training set.
         target_idx: Index of the target property in the dataset.
-        model_type: Type of the model ("gcn" or "dimenet").
+        model_type: Type of the model ("gcn", "nnconv" or "dimenet").
     Returns:
         Average loss over the training epoch.
     """
