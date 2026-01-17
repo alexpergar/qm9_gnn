@@ -7,7 +7,7 @@
 
 A comprehensive implementation of Graph Neural Networks (GNNs) for predicting molecular properties using the QM9 dataset. This project demonstrates the progressive evolution from simple GCN architectures to state-of-the-art models like DimeNet++, showcasing the power of geometric deep learning in quantum chemistry.
 
-## 🎯 Project overview
+## Project overview
 
 This project explores molecular property prediction through increasingly sophisticated GNN architectures. The primary objective is to predict heat capacity ($C_v$) values for small organic molecules from the QM9 dataset, which contains approximately 134,000 molecules with up to 9 heavy atoms (C, O, N, F).
 
@@ -19,7 +19,7 @@ This project explores molecular property prediction through increasingly sophist
 - **Interactive notebooks**: Jupyter notebooks for experimentation and visualization
 - **Performance optimization**: Advanced training techniques including early stopping, learning rate scheduling, and gradient clipping
 
-## 📊 Models Implemented
+## Models Implemented
 
 ### 1. Simple GCN (Graph Convolutional Network)
 
@@ -67,7 +67,7 @@ State-of-the-art architecture using 3D molecular geometry and directional messag
 - Radial basis functions with 5.0 Å cutoff
 - Specialized for 3D molecular structures
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 qm9/
@@ -102,7 +102,7 @@ qm9/
 └── README.md
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -168,7 +168,7 @@ model = SimpleGCN(input_channels=dataset.num_features, hidden_channels=128).to(d
 # ...
 ```
 
-## 📈 Results
+## Results
 
 Model performance on QM9 heat capacity prediction (target property index 11):
 
@@ -189,7 +189,7 @@ _Note: Results will vary based on training configuration and random seeds._
 - **Model Checkpointing**: Saves best model based on validation performance
 - **Normalization**: Target property normalization for stable training
 
-## 🔬 Technical Details
+## Technical Details
 
 ### Dataset: QM9
 
@@ -219,7 +219,7 @@ optimizer = torch.optim.AdamW
 - **R² Score**: Coefficient of determination for prediction quality
 - **Baseline Comparison**: Performance vs. predicting mean value
 
-## 🛠️ Development
+## Development
 
 ### Code Organization
 
@@ -240,7 +240,7 @@ To add a new model:
 3. Add training logic in a new notebook or extend existing scripts
 4. Update the training and evaluation functions if needed
 
-## 📚 Resources
+## Resources
 
 ### Papers & References
 
@@ -255,11 +255,11 @@ To add a new model:
 - [PyTorch](https://pytorch.org/): Deep learning framework
 - [RDKit](https://www.rdkit.org/): Chemistry toolkit (used by QM9 dataset)
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👤 Author
+## Author
 
 **Alejandro PG**
 
